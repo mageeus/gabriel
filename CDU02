@@ -1,0 +1,42 @@
+CDU02: Cadastrar Método de Pagamento
+
+Sumário: Através dessa utilização o ator Usuário poderá incluir, editar e excluir um Método de Pagamento;
+
+Ator Principal: Usuário;
+
+Fluxo Principal
+
+    1. O Usuário solicita Incluir Método de Pagamento.
+    2. Sistema exibe tela de Incluir Método de Pagamento e permite Incluir, Editar ou Excluir um Método.
+    3. O Usuário seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Incluir Método de Pagamento
+
+    a. O Usuário preenche os campos e clica em Incluir Método.
+    b. O Sistema verifica se o Método já está cadastrado, caso esteja, carrega os dados do usuário e muda para o Fluxo de Alteração.
+    c. Caso a RN04 esteja satisfeita o Sistema salva o Método.
+
+Fluxo Alternativo (2): Editar Método de Pagamento
+
+    a. O Sistema carrega uma lista com os Métodos de Pagamento cadastrados do Usuário.
+    b. O Usuário seleciona um Método de Pagamento.
+    c. O Sistema carrega os dados do Método selecionado. 
+    d. O Usuário altera os campos editáveis e clica em Salvar.
+    e. O Sistema verifica os campos, se a RN01 seja satisfeita o Sistema salva os dados.
+
+Fluxo Alternativo (2): Apagar Método de Pagamento
+
+    a. O Sistema carrega uma lista com os Métodos de Pagamento cadastrados do Usuário.
+    b. O Usuário seleciona um Método de Pagamento.
+    c. O Sistema carrega os dados do Método selecionado. 
+    d. O Usuário solicita a remoção do Método de Pagamento.
+    e. O Sistema remove o Método de Pagamento 
+
+Fluxo de Excessão RN04:
+    
+    A. O Sistema avisa que o Método digitado já está cadastrado ou é um Método válido.
+    B. O Sistema retorna ao Fluxo Alternativo (2): Incluir Método.
+
+RN01: O email precisa ser válido e não pode estar cadastrado.
+RN02: A senha precisa ter pelo menos: uma letra maiúscula, um carácter especial, um numero.
+RN04: O Método de Pagamento precisa ser válido e não pode estar cadastrado.
