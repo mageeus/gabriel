@@ -34,9 +34,9 @@ CDU05: o usuario consegue comentar numa publicação, editar ou apagar seu comen
 
 CDU06: o administrador consegue editar sua própria conta;
 CDU07: o administrador consegue banir uma outra conta que esteja contra as regras do sistema;
-CDU08: o administrador consegue apagar uma publicação que esteja contra as regras do sistema;
+CDU08: o administrador consegue apagar uma publicação ou comentário que esteja contra as regras do sistema;
 CDU09: o administrador consegue adicionar um comentario numa publicação;
-CDU010: o administrador consegue apagar um comentario que esteja contra as regras do sistema;
+
 
 
 CDU01: Cadastrar Usuário
@@ -129,3 +129,6 @@ Fluxo de Excessão RN04:
 RN01: O email precisa ser válido e não pode estar cadastrado.
 RN02: A senha precisa ter pelo menos: uma letra maiúscula, um carácter especial, um numero.
 RN04: O Método de Pagamento precisa ser válido e não pode estar cadastrado.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
