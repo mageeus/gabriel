@@ -1,0 +1,31 @@
+CDU03: Criar Publicação
+
+Sumário: Através dessa utilização o ator Usuário poderá criar uma Publicação;
+
+Ator Principal: Usuário;
+
+Fluxo Principal
+
+    1. O Usuário solicita Criar uma Publicação.
+    2. Sistema exibe tela de Criar Publicação e permite Criar, Editar ou Apagar uma Publicação.
+    3. O Usuário seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Criar Publicação
+
+    a. O Usuário preenche os campos desejados e clica em Publicar.
+    b. O Sistema realiza a publicação.
+
+Fluxo Alternativo (2): Editar Publicação
+
+    a. O Sistema carrega uma lista das Publicações do Usuário.
+    b. O Usuário seleciona uma Publicação.
+    c. O Sistema carrega os dados da Publicação. 
+    d. O Usuário altera os campos e clica em Salvar.
+    e. O Sistema Sistema salva os dados.
+
+Fluxo Alternativo (2): Apagar Publicação
+
+    a. O Sistema carrega uma lista das Publicações do Usuário.
+    b. O Usuário seleciona uma Publicação.     
+    d. O Usuário solicita a remoção da Publicação.
+    e. O Sistema remove a Publicação.

@@ -26,17 +26,32 @@ adm:
             criar;
             apagar;
 
-CDU01: o usuario consegue criar uma conta, editar e apagar a própria conta.
-CDU02: o usuario consegue adicionar, editar caso tenha errado e remover um metodo de pagamento
-CDU03: o usuario consegue criar uma publicação anexando, ou não, uma imagem de uma ilustração.
-CDU04: o usuario consegue editar sua publicação, mudando a imagem anexada, titulo da publicação.
-CDU05: o usuario consegue comentar numa publicação, editar ou apagar seu comentario
+CDU01: o usuario consegue criar uma conta, editar e apagar a própria conta.                                     feito
+CDU02: o usuario consegue adicionar, editar caso tenha errado e remover um metodo de pagamento                  feito
+CDU03: o usuario consegue criar uma publicação anexando, ou não, uma imagem de uma ilustração.                  feito
+CDU04: o usuario consegue editar sua publicação, mudando a imagem anexada, titulo da publicação.                feito
+CDU05: o usuario consegue comentar numa publicação, editar ou apagar seu comentario                             feito
 
 CDU06: o administrador consegue editar sua própria conta;
 CDU07: o administrador consegue banir uma outra conta que esteja contra as regras do sistema;
 CDU08: o administrador consegue apagar uma publicação ou comentário que esteja contra as regras do sistema;
-CDU09: o administrador consegue adicionar um comentario numa publicação;
+CDU09: o administrador consegue adicionar um comentario numa publicação;                                        feito
 
+--------------------------------------------------------------------------------------------------------------------------------------
+a fazer:
+
+adm:
+    conta:
+        editar
+        banir
+    publicacao:
+        apagar
+            comentário:
+                apagar
+         
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
 CDU01: Cadastrar Usuário
@@ -132,3 +147,68 @@ RN04: O Método de Pagamento precisa ser válido e não pode estar cadastrado.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+CDU03: Criar Publicação
+
+Sumário: Através dessa utilização o ator Usuário poderá criar uma Publicação;
+
+Ator Principal: Usuário;
+
+Fluxo Principal
+
+    1. O Usuário solicita Criar uma Publicação.
+    2. Sistema exibe tela de Criar Publicação e permite Criar, Editar ou Apagar uma Publicação.
+    3. O Usuário seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Criar Publicação
+
+    a. O Usuário preenche os campos desejados e clica em Publicar.
+    b. O Sistema realiza a publicação.
+
+Fluxo Alternativo (2): Editar Publicação
+
+    a. O Sistema carrega uma lista das Publicações do Usuário.
+    b. O Usuário seleciona uma Publicação.
+    c. O Sistema carrega os dados da Publicação. 
+    d. O Usuário altera os campos e clica em Salvar.
+    e. O Sistema Sistema salva os dados.
+
+Fluxo Alternativo (2): Apagar Publicação
+
+    a. O Sistema carrega uma lista das Publicações do Usuário.
+    b. O Usuário seleciona uma Publicação.     
+    d. O Usuário solicita a remoção da Publicação.
+    e. O Sistema remove a Publicação.
+
+    --------------------------------------------------------------------------------------------------------------------------------------
+
+CDU04: Criar Comentário
+
+Sumário: Através dessa utilização o ator Usuário e Administrador poderão criar um Comentário;
+
+Ator Principal: Usuário, Administrador;
+
+Fluxo Principal
+
+    1. O Ator Principal solicita Criar uma Comentário.
+    2. Sistema exibe tela de Criar Comentário e permite Criar, Editar ou Apagar uma Comentário.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Criar Comentário
+
+    a. O Ator Principal preenche os campos desejados e clica em Publicar.
+    b. O Sistema realiza a Comentário.
+
+Fluxo Alternativo (2): Editar Comentário
+
+    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
+    b. O Ator Principal seleciona uma Comentário.
+    c. O Sistema carrega os dados da Comentário. 
+    d. O Ator Principal altera os campos e clica em Salvar.
+    e. O Sistema Sistema salva os dados alterados.
+
+Fluxo Alternativo (2): Apagar Comentário
+
+    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
+    b. O Ator Principal seleciona uma Comentário.     
+    d. O Ator Principal solicita a remoção da Comentário.
+    e. O Sistema remove a Comentário.

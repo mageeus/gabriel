@@ -1,0 +1,31 @@
+CDU04: Criar Comentário
+
+Sumário: Através dessa utilização o ator Usuário e Administrador poderão criar um Comentário;
+
+Ator Principal: Usuário, Administrador;
+
+Fluxo Principal
+
+    1. O Ator Principal solicita Criar uma Comentário.
+    2. Sistema exibe tela de Criar Comentário e permite Criar, Editar ou Apagar uma Comentário.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Criar Comentário
+
+    a. O Ator Principal preenche os campos desejados e clica em Publicar.
+    b. O Sistema realiza a Comentário.
+
+Fluxo Alternativo (2): Editar Comentário
+
+    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
+    b. O Ator Principal seleciona uma Comentário.
+    c. O Sistema carrega os dados da Comentário. 
+    d. O Ator Principal altera os campos e clica em Salvar.
+    e. O Sistema Sistema salva os dados alterados.
+
+Fluxo Alternativo (2): Apagar Comentário
+
+    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
+    b. O Ator Principal seleciona uma Comentário.     
+    d. O Ator Principal solicita a remoção da Comentário.
+    e. O Sistema remove a Comentário.
