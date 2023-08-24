@@ -1,0 +1,23 @@
+CDU05: Editar Conta
+
+Sumário: Através dessa utilização o ator Administrador poderá Editar sua Conta;
+
+Ator Principal: Administrador;
+
+Fluxo Principal
+
+    1. O Ator Principal solicita Editar Conta.
+    2. Sistema exibe tela de Conta e permite Editar a Conta.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Editar Conta
+
+    a. O Sistema carrega a Conta do Ator Principal.
+    b. O Ator Principal Edita os campos Editéveis (bio, email) e clica em Salvar.
+    c. Se a RN01 estiver satisfeita os dados atualizados são salvos.
+
+Fluxo de Exceção RN01:
+    
+    A. O Sistema avisa que o email digitado já está cadastrado ou é um email válido.
+
+RN01: O email precisa ser válido e não pode estar cadastrado.

@@ -33,7 +33,7 @@ CDU04: o usuario consegue editar sua publicação, mudando a imagem anexada, tit
 CDU05: o usuario consegue comentar numa publicação, editar ou apagar seu comentario                             feito
 
 CDU06: o administrador consegue editar sua própria conta;                                                       feito
-CDU07: o administrador consegue banir uma outra conta que esteja contra as regras do sistema;
+CDU07: o administrador consegue banir uma outra conta que esteja contra as regras do sistema;                   feito
 CDU08: o administrador consegue apagar uma publicação ou comentário que esteja contra as regras do sistema;
 CDU09: o administrador consegue adicionar um comentario numa publicação;                                        feito
 
@@ -42,7 +42,6 @@ a fazer:
 
 adm:
     conta:
-        editar
         banir
     publicacao:
         apagar
@@ -209,7 +208,8 @@ Fluxo Alternativo (2): Editar Comentário
 Fluxo Alternativo (2): Apagar Comentário
 
     a. O Sistema carrega uma lista das Publicações do O Ator Principal.
-    b. O Ator Principal seleciona uma Comentário.     
+    b. O Ator Principal seleciona uma Comentário.
+    c. O Sistema carrega o Comenário selecionado.   
     d. O Ator Principal solicita a remoção da Comentário.
     e. O Sistema remove a Comentário.
 
@@ -241,34 +241,48 @@ RN01: O email precisa ser válido e não pode estar cadastrado.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-CDU06: Deletar Conta
+CDU06: Banir Conta
 
-Sumário: Através dessa utilização o ator Usuário e Administrador poderão criar um Comentário;
+Sumário: Através dessa utilização o ator Administrador poderá Banir uma Conta;
 
-Ator Principal: Usuário, Administrador;
+Ator Principal: Administrador;
 
 Fluxo Principal
 
-    1. O Ator Principal solicita Criar uma Comentário.
-    2. Sistema exibe tela de Criar Comentário e permite Criar, Editar ou Apagar uma Comentário.
+    1. O Ator Principal seleciona uma Conta.
+    2. Sistema exibe os Dados Usuário e permite Banir Conta.
     3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
 
-Fluxo Alternativo (2): Criar Comentário
+Fluxo Alternativo (2): Banir Conta
 
-    a. O Ator Principal preenche os campos desejados e clica em Publicar.
-    b. O Sistema realiza a Comentário.
+    a. O Sistema carrega os Dados do Usuário selecionado.
+    b. O Ator Principal escreve um motivo para o banimento e clica em Banir.
+    c. O Sistema remove o acesso do Usuário da Conta Banida.
 
-Fluxo Alternativo (2): Editar Comentário
+--------------------------------------------------------------------------------------------------------------------------------------
 
-    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
-    b. O Ator Principal seleciona uma Comentário.
-    c. O Sistema carrega os dados da Comentário. 
-    d. O Ator Principal altera os campos e clica em Salvar.
-    e. O Sistema Sistema salva os dados alterados.
+CDU07: Remover Publicação ou Comentário
+
+Sumário: Através dessa utilização o ator Administrador poderá Remover uma Publicação ou Comentário;
+
+Ator Principal: Administrador;
+
+Fluxo Principal:
+
+    1. O Ator Principal seleciona uma Publicação.
+    2. O Sistema carrega a Publicação e os Comentários da Publicação e permite Remover Publicação e Comentário.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Remover Publicação
+
+    a. O Ator Principal solicita a remoção da Publicação.
+    b. O Sistema carrega os Dados da Publicação e exige um justificativa para a remoção.
+    c. O Ator Principal preenche o campo exigido e clica em Remover Publicação.
+    d. O Sistema remove a Publicação.
 
 Fluxo Alternativo (2): Apagar Comentário
 
-    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
-    b. O Ator Principal seleciona uma Comentário.     
-    d. O Ator Principal solicita a remoção da Comentário.
-    e. O Sistema remove a Comentário.
+    a. O Ator Principal solicita a remoção do Comentário.
+    b. O Sistema carrega os Dados do Comentário e exige um justificativa para a remoção.
+    c. O Ator Principal preenche o campo exigido e clica em Remover Comentário.
+    d. O Sistema remove o Comentário.
