@@ -1,0 +1,25 @@
+CDU07: Remover Publicação ou Comentário
+
+Sumário: Através dessa utilização o ator Administrador poderá Remover uma Publicação ou Comentário;
+
+Ator Principal: Administrador;
+
+Fluxo Principal:
+
+    1. O Ator Principal seleciona uma Publicação.
+    2. O Sistema carrega a Publicação e os Comentários da Publicação e permite Remover Publicação e Comentário.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Remover Publicação
+
+    a. O Ator Principal solicita a remoção da Publicação.
+    b. O Sistema carrega os Dados da Publicação e exige um justificativa para a remoção.
+    c. O Ator Principal preenche o campo exigido e clica em Remover Publicação.
+    d. O Sistema remove a Publicação.
+
+Fluxo Alternativo (2): Apagar Comentário
+
+    a. O Ator Principal solicita a remoção do Comentário.
+    b. O Sistema carrega os Dados do Comentário e exige um justificativa para a remoção.
+    c. O Ator Principal preenche o campo exigido e clica em Remover Comentário.
+    d. O Sistema remove o Comentário.

@@ -1,0 +1,17 @@
+CDU06: Banir Conta
+
+Sumário: Através dessa utilização o ator Administrador poderá Banir uma Conta;
+
+Ator Principal: Administrador;
+
+Fluxo Principal
+
+    1. O Ator Principal seleciona uma Conta.
+    2. Sistema exibe os Dados Usuário e permite Banir Conta.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Banir Conta
+
+    a. O Sistema carrega os Dados do Usuário selecionado.
+    b. O Ator Principal escreve um motivo para o banimento e clica em Banir.
+    c. O Sistema remove o acesso do Usuário da Conta Banida.
