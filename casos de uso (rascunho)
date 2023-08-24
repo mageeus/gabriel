@@ -34,7 +34,7 @@ CDU05: o usuario consegue comentar numa publicação, editar ou apagar seu comen
 
 CDU06: o administrador consegue editar sua própria conta;                                                       feito
 CDU07: o administrador consegue banir uma outra conta que esteja contra as regras do sistema;                   feito
-CDU08: o administrador consegue apagar uma publicação ou comentário que esteja contra as regras do sistema;
+CDU08: o administrador consegue apagar uma publicação ou comentário que esteja contra as regras do sistema;     feito
 CDU09: o administrador consegue adicionar um comentario numa publicação;                                        feito
 
 --------------------------------------------------------------------------------------------------------------------------------------
