@@ -32,7 +32,7 @@ CDU03: o usuario consegue criar uma publicação anexando, ou não, uma imagem d
 CDU04: o usuario consegue editar sua publicação, mudando a imagem anexada, titulo da publicação.                feito
 CDU05: o usuario consegue comentar numa publicação, editar ou apagar seu comentario                             feito
 
-CDU06: o administrador consegue editar sua própria conta;
+CDU06: o administrador consegue editar sua própria conta;                                                       feito
 CDU07: o administrador consegue banir uma outra conta que esteja contra as regras do sistema;
 CDU08: o administrador consegue apagar uma publicação ou comentário que esteja contra as regras do sistema;
 CDU09: o administrador consegue adicionar um comentario numa publicação;                                        feito
@@ -84,15 +84,15 @@ Fluxo Alternativo (2): Apagar Conta
     b. O Usuário preenche o campo solicitado e clica em Confirmar.
     c. O Sistema verifica o campo e se a RN03 for satisfeita a conta é apagada.
 
-Fluxo de Excessão RN01:
+Fluxo de Exceção RN01:
     
     A. O Sistema avisa que o email digitado já está cadastrado ou é um email válido.
 
-Fluxo de Excessão RN02:
+Fluxo de Exceção RN02:
 
     A. O Sistema avisa que a senha não está comprindo todos os requerimentos.
 
-Fluxo de Excessão RN03:
+Fluxo de Exceção RN03:
     
     A. O Sistema avisa que a senha inserida não está correta.
 
@@ -136,7 +136,7 @@ Fluxo Alternativo (2): Apagar Método de Pagamento
     d. O Usuário solicita a remoção do Método de Pagamento.
     e. O Sistema remove o Método de Pagamento 
 
-Fluxo de Excessão RN04:
+Fluxo de Exceção RN04:
     
     A. O Sistema avisa que o Método digitado já está cadastrado ou é um Método válido.
     B. O Sistema retorna ao Fluxo Alternativo (2): Incluir Método.
@@ -182,6 +182,66 @@ Fluxo Alternativo (2): Apagar Publicação
     --------------------------------------------------------------------------------------------------------------------------------------
 
 CDU04: Criar Comentário
+
+Sumário: Através dessa utilização o ator Usuário e Administrador poderão criar um Comentário;
+
+Ator Principal: Usuário, Administrador;
+
+Fluxo Principal
+
+    1. O Ator Principal solicita Criar uma Comentário.
+    2. Sistema exibe tela de Criar Comentário e permite Criar, Editar ou Apagar uma Comentário.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Criar Comentário
+
+    a. O Ator Principal preenche os campos desejados e clica em Publicar.
+    b. O Sistema realiza a Comentário.
+
+Fluxo Alternativo (2): Editar Comentário
+
+    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
+    b. O Ator Principal seleciona uma Comentário.
+    c. O Sistema carrega os dados da Comentário. 
+    d. O Ator Principal altera os campos e clica em Salvar.
+    e. O Sistema Sistema salva os dados alterados.
+
+Fluxo Alternativo (2): Apagar Comentário
+
+    a. O Sistema carrega uma lista das Publicações do O Ator Principal.
+    b. O Ator Principal seleciona uma Comentário.     
+    d. O Ator Principal solicita a remoção da Comentário.
+    e. O Sistema remove a Comentário.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+CDU05: Editar Conta
+
+Sumário: Através dessa utilização o ator Administrador poderá Editar sua Conta;
+
+Ator Principal: Administrador;
+
+Fluxo Principal
+
+    1. O Ator Principal solicita Editar Conta.
+    2. Sistema exibe tela de Conta e permite Editar a Conta.
+    3. O Ator Principal seleciona uma das opções ou encerra o caso de uso.
+
+Fluxo Alternativo (2): Editar Conta
+
+    a. O Sistema carrega a Conta do Ator Principal.
+    b. O Ator Principal Edita os campos Editéveis (bio, email) e clica em Salvar.
+    c. Se a RN01 estiver satisfeita os dados atualizados são salvos.
+
+Fluxo de Exceção RN01:
+    
+    A. O Sistema avisa que o email digitado já está cadastrado ou é um email válido.
+
+RN01: O email precisa ser válido e não pode estar cadastrado.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+CDU06: Deletar Conta
 
 Sumário: Através dessa utilização o ator Usuário e Administrador poderão criar um Comentário;
 
